@@ -5,8 +5,6 @@ using UnityEngine.UI;
 public class Library : MonoBehaviour {
 
     public SetLanguageImage.Lib library;
-    
-
 	public string cur
     {
         get
@@ -14,9 +12,6 @@ public class Library : MonoBehaviour {
             return Language.Current;
         }
     }
-
-    
-
 	public void SetText(Text text, string en)
     {
 
@@ -28,8 +23,6 @@ public class Library : MonoBehaviour {
         else
             text.text = library[en][cur].text;
     }
-    
-
 	public string GetTranslation(string en)
     {
         if (cur == "ar")
